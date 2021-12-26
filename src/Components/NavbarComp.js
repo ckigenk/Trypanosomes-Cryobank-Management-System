@@ -42,7 +42,7 @@ function NavbarComp() {
                   Something else here
                 </NavDropdown.Item>
               </NavDropdown>
-              <Nav.Link as={Link} to={"/data"} className="text-white">
+              <Nav.Link as={Link} to={"#"} className="text-white">
                 History
               </Nav.Link>
             </Nav>
