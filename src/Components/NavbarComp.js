@@ -16,11 +16,7 @@ function NavbarComp() {
       <Navbar bg="primary" variant="dark" expand="lg">
         <Container fluid style={{ margin: "0% 10%" }}>
           <Navbar.Brand as={Link} to={"/"}>
-            <img
-              src="http://lims.icipe.org:8080/img/icipe-logo-web-200px-jpg.fead2257.jpg"
-              alt=""
-              height="40px"
-            />
+            <img src="../logo.jpg" alt="" height="40px" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
