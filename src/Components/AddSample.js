@@ -11,7 +11,7 @@ function AddSample() {
   });
   function handleSubmit(e) {
     axios
-      .post("http://127.0.0.1:8000/", {
+      .post("https://cryobank.herokuapp.com/", {
         canister: data.canister,
         label: data.label,
         date: data.date,

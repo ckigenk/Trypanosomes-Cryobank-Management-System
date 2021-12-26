@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import { Table } from "react-bootstrap";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import AddSample from "./AddSample";
 
 export class Data extends Component {
@@ -16,8 +16,8 @@ export class Data extends Component {
     });
   }
   deleteSample = (ID) => {
-    const url = "https://cryobank.herokuapp.com/";
-    axios.delete(`${url}${ID}`).then((res) => {
+    // const url = "https://cryobank.herokuapp.com/";
+    axios.delete(`https://cryobank.herokuapp.com/${ID}`).then((res) => {
       if (res.data != null) {
         alert("Sample retrieved succesfully");
         this.setState({
@@ -42,7 +42,7 @@ export class Data extends Component {
           </thead>
           <tbody>
             {this.state.samples.map((sample) => (
-              <tr>
+              <tr key={sample.id}>
                 <td>{sample.canister}</td>
                 <td>{sample.label}</td>
                 <td>{sample.date}</td>
