@@ -1,7 +1,7 @@
 import "./App.css";
 import NavbarComp from "./Components/NavbarComp";
 import Home from "./Components/Home";
-import SampleInfo from "./Components/SampleInfo";
+// import SampleInfo from "./Components/SampleInfo";
 import { Routes, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Data from "./Components/Data";
