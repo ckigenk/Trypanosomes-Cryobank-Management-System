@@ -16,6 +16,7 @@ export class Data extends Component {
     });
   }
   deleteSample = (ID) => {
+    const url = "https://cryobank.herokuapp.com/";
     axios.delete(`${url}${ID}`).then((res) => {
       if (res.data != null) {
         alert("Sample retrieved succesfully");
