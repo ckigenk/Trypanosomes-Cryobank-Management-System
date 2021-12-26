@@ -6,6 +6,7 @@ import { Routes, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Data from "./Components/Data";
 import AddSample from "./Components/AddSample";
+// import NewHome from "./Components/NewHome";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/1" element={<SampleInfo />}></Route>
         <Route path="/data" element={<Data />}></Route>
         <Route path="/add" element={<AddSample />}></Route>
+        {/* <Route path="/new" element={<NewHome />}></Route> */}
       </Routes>
     </div>
   );

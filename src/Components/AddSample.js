@@ -65,7 +65,7 @@ function AddSample() {
             </Form.Label>
             <Col sm="6">
               <Form.Control
-                type="text"
+                type="date"
                 placeholder="Enter"
                 onChange={(e) => handleChange(e)}
                 id="date"

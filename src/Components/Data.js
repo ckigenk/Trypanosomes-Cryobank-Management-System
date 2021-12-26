@@ -9,11 +9,22 @@ export class Data extends Component {
     samples: [],
   };
   componentDidMount() {
-    axios.get("http://127.0.0.1:8000/").then((res) => {
+    const url = "https://cryobank.herokuapp.com/";
+    axios.get(url).then((res) => {
       console.log(res.data);
       this.setState({ samples: res.data });
     });
   }
+  deleteSample = (ID) => {
+    axios.delete(`${url}${ID}`).then((res) => {
+      if (res.data != null) {
+        alert("Sample retrieved succesfully");
+        this.setState({
+          samples: this.state.samples.filter((samples) => samples.id !== ID),
+        });
+      }
+    });
+  };
   render() {
     return (
       <div style={{ marginTop: "50px" }}>
@@ -32,15 +43,19 @@ export class Data extends Component {
             {this.state.samples.map((sample) => (
               <tr>
                 <td>{sample.canister}</td>
-                <td key={sample.id}>{sample.label}</td>
+                <td>{sample.label}</td>
                 <td>{sample.date}</td>
                 <td>{sample.initials}</td>
-                <Link to="#">
+                {/* <Link to="#">
                   <th>Info</th>
-                </Link>
+                </Link> */}
                 <td>
                   <span>
-                    <button className="btn btn-danger">Retrieve</button>
+                    <button
+                      className="btn btn-danger"
+                      onClick={this.deleteSample.bind(this, sample.id)}>
+                      Retrieve
+                    </button>
                   </span>
                 </td>
               </tr>
