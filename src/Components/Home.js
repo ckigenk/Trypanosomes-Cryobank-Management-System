@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import { Button } from "react-bootstrap";
 import CountComp from "./CountComp";
 
 function Home() {
   return (
     <>
       <div style={{ display: "flex", justifyContent: "center" }}>
-        <h1 className='text-primary'>Trypanosome Cryobank Management System</h1>
+        <h1 className="text-primary">Trypanosome Cryobank Management System</h1>
       </div>
 
       <div className="container" style={{ marginTop: "50px", height: "68vh" }}>
@@ -21,15 +21,16 @@ function Home() {
                 height="400px"
                 marginTop="10px"
               />
-              <span
+              <Button
+                variant="dark"
                 style={{
-                  padding: "10%",
+                  // padding: "10%",
                   fontSize: "1.9rem",
                   // color: "black",
                   textDecorationLine: "none",
                 }}>
                 Liquid Nitrogen 1
-              </span>
+              </Button>
             </Link>
           </div>
           <div className="col">
@@ -41,9 +42,16 @@ function Home() {
                 height="400px"
                 marginTop="10px"
               />
-              <span style={{ padding: "0 10%", fontSize: "1.9rem" }}>
+              <Button
+                variant="dark"
+                style={{
+                  // padding: "10%",
+                  fontSize: "1.9rem",
+                  // color: "black",
+                  textDecorationLine: "none",
+                }}>
                 Liquid Nitrogen 2
-              </span>
+              </Button>
             </Link>
           </div>
           <div className="col">
@@ -55,11 +63,16 @@ function Home() {
                 height="400px"
                 marginTop="10px"
               />
-              <span
-                className="col-sm-12"
-                style={{ padding: "0 10%", fontSize: "1.9rem" }}>
+              <Button
+                variant="dark"
+                style={{
+                  // padding: "10%",
+                  fontSize: "1.9rem",
+                  // color: "black",
+                  textDecorationLine: "none",
+                }}>
                 Liquid Nitrogen 3
-              </span>
+              </Button>
             </Link>
           </div>
           <div className="col">
@@ -71,9 +84,16 @@ function Home() {
                 height="400px"
                 marginTop="10px"
               />
-              <span style={{ padding: "0 10%", fontSize: "1.9rem" }}>
+              <Button
+                variant="dark"
+                style={{
+                  // padding: "10%",
+                  fontSize: "1.9rem",
+                  // color: "black",
+                  textDecorationLine: "none",
+                }}>
                 Liquid Nitrogen 4
-              </span>
+              </Button>
             </Link>
           </div>
         </div>

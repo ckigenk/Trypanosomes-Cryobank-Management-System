@@ -1,19 +1,18 @@
 // import React from "react";
-// import { Container, Row, Col } from "react-bootstrap";
+// import { Container, Row, Col, Button } from "react-bootstrap";
 // import { Link } from "react-router-dom";
 
-// const liquidNitrogen = {
-//   img: "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQly1keJd5p2p8AcE3jGFpN0pUVxplnWfoYau3Bb4XrKlMjtMJb6rf40EH2hLBm3jInKhIfeVr_oqgQhxjxV6fD-iblOkwFsD7BBohFMd4l-RSrOpb2KkhfMA&usqp=CAE",
-//   "title": "Liquid Nitrogen 1",
-// };
-// function NewHome(props) {
-//     [...liquidNitrogen] = props
+// // const liquidNitrogen = {
+// //   img: "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQly1keJd5p2p8AcE3jGFpN0pUVxplnWfoYau3Bb4XrKlMjtMJb6rf40EH2hLBm3jInKhIfeVr_oqgQhxjxV6fD-iblOkwFsD7BBohFMd4l-RSrOpb2KkhfMA&usqp=CAE",
+// //   "title": "Liquid Nitrogen 1",
+// // };
+// function NewHome() {
+//   //     [...liquidNitrogen] = props
 //   return (
 //     <>
 //       <h1>Trypanosome Cryobank Management System</h1>
-//       <img src="{props.img}"/>
-//       <h2>{props.title}</h2>
-//       {/* <Container>
+
+//       <Container>
 //         <Row>
 //           <Col>
 //             <Link to="/1">
@@ -22,7 +21,7 @@
 //                 alt=""
 //                 height="300px"
 //               />
-//               <span>Liquid Nitrogen 1</span>
+//               <Button>Liquid Nitrogen 1</Button>
 //             </Link>
 //           </Col>
 //           <Col>
@@ -32,7 +31,7 @@
 //                 alt=""
 //                 height="300px"
 //               />
-//               <span as={Row}>Liquid Nitrogen 1</span>
+//               <Button>Liquid Nitrogen 2</Button>
 //             </Link>
 //           </Col>
 //           <Col>
@@ -42,7 +41,7 @@
 //                 alt=""
 //                 height="300px"
 //               />
-//               <span>Liquid Nitrogen 1</span>
+//               <Button>Liquid Nitrogen 3</Button>
 //             </Link>
 //           </Col>
 //           <Col>
@@ -52,13 +51,12 @@
 //                 alt=""
 //                 height="300px"
 //               />
-//               <span>Liquid Nitrogen 1</span>
+//               <Button>Liquid Nitrogen 4</Button>
 //             </Link>
 //           </Col>
 //         </Row>
-//       </Container> */}
+//       </Container>
 //     </>
 //   );
 // }
-
 // export default NewHome;
